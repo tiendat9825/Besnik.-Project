@@ -38,7 +38,7 @@ a {
     color: #ffffff;
     border: none;
     cursor: pointer;
-    transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.4s;
 }
 
 .line-clamp {
@@ -116,6 +116,7 @@ a {
 .header .action__sign-in:hover {
     color: #2f3a3b;
     text-shadow: 1px 0 0 currentColor;
+    transition-duration: 0.4s;
 }
 
 .header .action__sign-up {
@@ -124,7 +125,7 @@ a {
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
     border-radius: 6px;
-    transition: all ease-in-out 0.25s;
+    transition: all ease-in-out 0.4s;
 }
 
 .header .action__sign-up:hover {
@@ -190,7 +191,7 @@ a {
     border-radius: 50%;
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
-    transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.4s;
 }
 
 .hero__action--play-btn:hover {
@@ -456,7 +457,7 @@ a {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.78;
-    color: #767e7e;
+    color: var(--desc-color);
     -webkit-line-clamp: 2;
 }
 
@@ -495,7 +496,7 @@ a {
     height: 393px;
     object-fit: cover;
     border-radius: 8px;
-    transition: 0.3s ease-in-out;
+    transition: 0.4s ease-in-out;
     opacity: 0.7;
 }
 
@@ -609,5 +610,175 @@ a {
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.5;
+    color: var(--desc-color);
+}
+
+/* FeedBack */
+.feedback {
+    padding: 40px 0 80px;
+}
+
+.feedback-list {
+    display: flex;
+    gap: 20px;
+    flex-shrink: 1;
+    overflow: hidden;
+}
+
+.feedback-item {
+    display: flex;
+    align-items: center;
+    gap: 72px;
+}
+
+.feedback-info {
+    width: calc(42%-72px);
+}
+
+.feedback-info__quote {
+    width: 419px;
+    margin-top: 27px;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 1.5;
+    color: #5d6564;
+}
+
+.feedback-info__label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 33px;
+    padding: 0 10px;
+    font-size: 1.8rem;
+    font-weight: 400;
     color: #767e7e;
+}
+
+.feedback-info__label::before {
+    position: absolute;
+    left: 0;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 2px;
+    background: var(--title-color);
+}
+
+.feedback-info__label--strong {
+    margin-right: 5px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: var(--title-color);
+}
+
+.feedback-info__btn {
+    margin-top: 52px;
+    display: flex;
+    gap: 30px;
+}
+
+.feedback-info__btn--right,
+.feedback-info__btn--left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    background: #fff;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.feedback-info__btn--left:hover,
+.feedback-info__btn--right:hover {
+    background: var(--primary-color);
+    color: #fff;
+    border: transparent;
+}
+
+.feedback-image {
+    position: relative;
+    width: 679px;
+    height: 481px;
+}
+.feedback-image__icon--1,
+.feedback-image__icon--2,
+.feedback-image__icon--3,
+.feedback-image__icon--4,
+.feedback-image__icon--5,
+.feedback-image__icon--6 {
+    position: absolute;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.feedback-image__icon--1 {
+    width: 92px;
+    height: 92px;
+    top: 0px;
+    left: 144px;
+}
+.feedback-image__icon--2 {
+    width: 78px;
+    height: 78px;
+    top: 258px;
+    left: 0px;
+}
+.feedback-image__icon--3 {
+    width: 78px;
+    height: 78px;
+    top: 403px;
+    left: 212px;
+}
+.feedback-image__icon--4 {
+    width: 235px;
+    height: 235px;
+    top: 107px;
+    left: 171px;
+}
+.feedback-image__icon--5 {
+    width: 78px;
+    height: 78px;
+    top: 374px;
+    left: 569px;
+}
+.feedback-image__icon--6 {
+    width: 110px;
+    height: 110px;
+    top: 19px;
+    left: 569px;
+}
+
+/* Admit */
+
+.admit {
+    margin-top: 50px;
+    background: #def6f5;
+}
+
+.admit-body {
+    padding: 76px 0 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admit-desc {
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+
+.admit-btn:hover {
+    color: var(--primary-color);
+    background-color: #fff;
 }
