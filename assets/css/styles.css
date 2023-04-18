@@ -5,6 +5,7 @@
 html {
     font-size: 62.5%;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -781,4 +782,55 @@ a {
 .admit-btn:hover {
     color: var(--primary-color);
     background-color: #fff;
+}
+
+/* Footer */
+.footer {
+    padding: 130px 0 50px;
+}
+
+.footer-row--top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-heading {
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #2e2e2e;
+}
+
+.footer-list {
+    margin-top: 26px;
+}
+
+.footer-item {
+    margin-top: 20px;
+}
+
+.footer-link {
+    display: flex;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 24px;
+    color: #535353;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.media-icon {
+    margin-right: 16px;
+}
+
+.footer-row--bot {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.footer-copy-right {
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #b0b5b4;
 }

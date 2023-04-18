@@ -4,9 +4,89 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Project 03</title>
+        <title>Besnik Lesson</title>
+
+        <!-- CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
 
         <!-- Font Embed -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,47 +97,50 @@
         />
     </head>
     <body>
-        <main style="height: 1000vh">
-            <!-- Header -->
+        <!-- Header -->
 
-            <header class="header header--sticky">
-                <div class="display-area">
-                    <div class="header__body">
+        <header class="header header--sticky">
+            <div class="display-area">
+                <div class="header__body">
+                    <a href="#">
                         <img
                             src="./assets/./icon/logo.svg"
                             alt="Besnik."
                             class="logo"
                         />
-                        <nav class="nav">
-                            <ul class="nav__item">
-                                <li class="nav__item--active">
-                                    <a class="nav__link" href="#!">Home</a>
-                                </li>
-                                <li>
-                                    <a class="nav__link" href="#!">Features</a>
-                                </li>
-                                <li>
-                                    <a class="nav__link" href="#!">Pricing</a>
-                                </li>
-                                <li>
-                                    <a class="nav__link" href="#!">About</a>
-                                </li>
-                                <li>
-                                    <a class="nav__link" href="#!">Contact</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="header__action">
-                            <a href="#!" class="action__sign-in">Sign in</a>
-                            <a href="#!" class="action__sign-up">Sign up</a>
-                        </div>
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav__item">
+                            <li class="nav__item--active">
+                                <a class="nav__link" href="#">Home</a>
+                            </li>
+                            <li>
+                                <a class="nav__link" href="#feature">
+                                    Features
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav__link" href="#course">Pricing</a>
+                            </li>
+                            <li>
+                                <a class="nav__link" href="#stats">About</a>
+                            </li>
+                            <li>
+                                <a class="nav__link" href="#footer">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__action">
+                        <a href="#!" class="action__sign-in">Sign in</a>
+                        <a href="#!" class="action__sign-up">Sign up</a>
                     </div>
                 </div>
-            </header>
-
+            </div>
+        </header>
+        <main class="main">
             <!-- Hero Section -->
 
-            <div class="hero">
+            <section class="hero">
                 <div class="display-area">
                     <div class="hero__body">
                         <div class="hero__content">
@@ -155,11 +238,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!--Feature Section  -->
 
-            <section class="features">
+            <section class="features" id="feature">
                 <div class="display-area">
                     <div class="features-top">
                         <div class="features__title">F E A T U R E S</div>
@@ -248,7 +331,7 @@
 
             <!-- Course Section -->
 
-            <section class="course">
+            <section class="course" id="course">
                 <div class="display-area">
                     <div class="course-top">
                         <div class="course__title">C O U R S E S</div>
@@ -291,9 +374,7 @@
                                     </a>
                                     <div class="course-info__price">
                                         Fee
-                                        <strong
-                                            class="course-info__pricel--big"
-                                        >
+                                        <strong class="course-info__price--big">
                                             $200
                                         </strong>
                                     </div>
@@ -336,9 +417,7 @@
                                     </a>
                                     <div class="course-info__price">
                                         Fee
-                                        <strong
-                                            class="course-info__pricel--big"
-                                        >
+                                        <strong class="course-info__price--big">
                                             $250
                                         </strong>
                                     </div>
@@ -381,9 +460,7 @@
                                     </a>
                                     <div class="course-info__price">
                                         Fee
-                                        <strong
-                                            class="course-info__pricel--big"
-                                        >
+                                        <strong class="course-info__price--big">
                                             $350
                                         </strong>
                                     </div>
@@ -414,7 +491,7 @@
 
             <!-- Stats Section -->
 
-            <div class="stats">
+            <section class="stats" id="stats">
                 <div class="display-area">
                     <div class="stats-list">
                         <div class="stats-item">
@@ -437,7 +514,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!-- Feedback Section -->
 
@@ -743,8 +820,127 @@
 
             <!-- Footer -->
 
-            <footer class="footer">
-                <div class="display-area"></div>
+            <footer class="footer" id="footer">
+                <div class="display-area">
+                    <div class="footer-row--top">
+                        <!-- col-1 -->
+                        <div class="footer-col">
+                            <a class="footer-link" href="#">
+                                <img
+                                    src="./assets/icon/logo.svg"
+                                    alt="Besnik."
+                                    class="footer-logo"
+                                />
+                            </a>
+                        </div>
+                        <!-- col-2 -->
+                        <div class="footer-col">
+                            <h3 class="footer-heading">Company</h3>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a class="footer-link" href="#!">About</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="#!">Careers</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="#!">Press</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- col-3 -->
+                        <div class="footer-col">
+                            <h3 class="footer-heading">Community</h3>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a class="footer-link" href="#!">
+                                        Team Plans
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="#!">Blog</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="#!">
+                                        Students
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="#!">
+                                        Schoolarships
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- col-4 -->
+                        <div class="footer-col">
+                            <h3 class="footer-heading">Teaching</h3>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a class="footer-link" href="#!">
+                                        Become a teacher
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="#!">
+                                        Teaching academy
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- col-5 -->
+                        <div class="footer-col">
+                            <h3 class="footer-heading">Be social</h3>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a class="footer-link" href="#!">
+                                        <img
+                                            src="./assets/icon/twitter-icon.svg"
+                                            alt=""
+                                            class="media-icon"
+                                        />
+                                        Twitter
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="#!">
+                                        <img
+                                            src="./assets/icon/facebook-icon.svg"
+                                            alt=""
+                                            class="media-icon"
+                                        />
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="#!">
+                                        <img
+                                            src="./assets/icon/instagram-icon.svg"
+                                            alt=""
+                                            class="media-icon"
+                                        />
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="#!">
+                                        <img
+                                            src="./assets/icon/linkedin-icon.svg"
+                                            alt=""
+                                            class="media-icon"
+                                        />
+                                        Linkedin
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-row--bot">
+                        <span class="footer-copy-right">
+                            © Copyright 2020 by Mayad Ahmed. All right reserved.
+                        </span>
+                    </div>
+                </div>
             </footer>
         </main>
     </body>
